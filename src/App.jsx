@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Categories from "./components/Categories";
 import ProductsGroup from "./components/ProductsGroup";
 import Footer from "./components/Footer";
-import AddToCard from "./components/addToCard";
+import AddToCard from "./components/AddToCard";
 import { ShoppingContext } from "./contexts/ShoppingCardContext";
 
 import LayoutScreen from "./components/LayoutScreen";
