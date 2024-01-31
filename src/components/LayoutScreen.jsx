@@ -2,8 +2,8 @@
 
 import React from "react";
 
-const Layout = ({ children }) => {
+const LayoutScreen = ({ children }) => {
 	return <div className="flex flex-col min-h-full  ">{children}</div>;
 };
 
-export default Layout;
+export default LayoutScreen;
