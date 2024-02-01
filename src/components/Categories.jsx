@@ -11,9 +11,13 @@ const Categories = () => {
 
 	useEffect(() => {
 		const fetchCategories = async () => {
-			const res = await categoriesApi.get("/");
-			setCategory(res.data);
-			setReady(true);
+			try {
+				const res = await categoriesApi.get("/");
+				setCategory(res.data);
+				setReady(true);
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
 		};
 		fetchCategories();
 	}, []);
