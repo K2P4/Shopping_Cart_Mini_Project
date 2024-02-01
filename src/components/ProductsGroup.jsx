@@ -14,9 +14,13 @@ const ProductsGroup = () => {
 
 	useEffect(() => {
 		const fetchProducts = async () => {
-			const res = await productsApi.get("/");
-			setProducts(res.data);
-			setLoading(true);
+			try {
+				const res = await productsApi.get("/");
+				setProducts(res.data);
+				setLoading(true);
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
 		};
 		fetchProducts();
 	}, []);
