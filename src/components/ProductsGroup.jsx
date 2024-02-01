@@ -33,7 +33,7 @@ const ProductsGroup = () => {
 				)}
 
 				{loading && (
-					<div className="flex  gap-4  sm:gap-7  align-middle items-center flex-wrap ">
+					<div className="flex  gap-6  sm:gap-7  align-middle items-center flex-wrap ">
 						{products.map((product) => (
 							<Product  key={product.id} product={product} />
 						))}
